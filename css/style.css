@@ -6,8 +6,8 @@
 
 body {
     margin: 0;
-    font-family: Arial;
-    font-weight: 600;
+    font-family: 'Lato';
+    font-weight: 400;
 }
 
 #nav {
@@ -30,35 +30,46 @@ li {
 }
 
 li a {
-    color: brown;
+    color: #940E3F;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 19px;
-}
-.icon {
-    padding: 10px;
-    background: dodgerblue;
-    color: white;
-    min-width: 50px;
-    text-align: center;
-}
-#search {
-    padding: 0.5% 2%;
-    border: 2px solid brown;
-    border-radius: 5px;
+    font-weight: 700;
+    font-size: 21px;
 }
 
+.search svg {
+    position: absolute;
+    left: 2%;
+    pointer-events: none;
+    fill: #940E3F;
+    vertical-align: middle;
+}
+.search{
+    position: relative;
+    padding: 0.5% 2%;
+    border: 2px solid #940E3F;
+    border-radius: 5px;
+    background-color: white;
+}
+.search input {
+    border-style: none;
+}
+main {
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
 #showcase {
     display: flex;
     flex-direction: row;
     height: 30vh;
-    background-color: lightgreen;
+    background-color: #43E04F;
+    color: white;
 }
 
 .slogan {
     margin: auto;
-    text-align: center;
+    text-align: justify;
 }
 .img {
     width: 60vw;
@@ -70,7 +81,7 @@ li a {
 .kolmio {
     width: 0;
     height: 0;
-    border-bottom: 30vh solid lightgreen;
+    border-bottom: 30vh solid #43E04F;
     border-right: 6vw solid transparent;
     position: absolute;
     left: 0vw;
@@ -80,19 +91,53 @@ main {
     flex-direction: column;
 }
 .info-area {
-    margin: 4vw;
+    margin: 6vh 10vw 6vh 10vw;
     text-align: center;
+    font-size: 21px;
+    font-weight: 400;
 }
 .restaurants {
     display: flex;
-    margin: 2vw;
-    text-align: center;
-    justify-content: space-evenly;
+    margin: 2vh 10vw 2vh 10vw;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-.restaurants p {
-    border: 2px dashed brown;
+.restaurants .otsikko {
+    font-weight: 900;
+    font-size: 21px;
+    margin: 2%;
+}
+.restaurants .ravintola1, .ravintola2, .uusi_ravintola {
+    border: 2px dashed #940E3F;
     border-radius: 5px;
-    margin: 0.5vw;
-    padding: 1vw 18vw 9vw 1vw;
+    margin: 1vw;
+    width: 30vw;
     background-color: lightgrey;
+    position: relative;
+}
+.restaurants .sijainti svg {
+    position: absolute;
+    right: 3%;
+    top: 7%;
+}
+.restaurants .uusi_ravintola svg {
+    position: absolute;
+    left: 1%;
+    top: 6%;
+}
+.restaurants .uusi_ravintola {
+    padding: 0.5%;
+}
+.restaurants .uusi_ravintola p {
+    position: absolute;
+    left: 8%;
+    top: 20%;
+    text-align: center;
+}
+.restaurants svg:hover {
+    fill: #43E04F;
+}
+.restaurants .teksti {
+    font-size: 10px;
+    margin: 2%;
 }
